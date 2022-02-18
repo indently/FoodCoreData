@@ -14,7 +14,7 @@ struct EditFoodView: View {
     var food: FetchedResults<Food>.Element
     
     @State private var name = ""
-    @State private var calories: Double = 100.0
+    @State private var calories: Double = 400.0
     
     var body: some View {
         Form {
@@ -26,7 +26,7 @@ struct EditFoodView: View {
                     }
                 VStack {
                     Text("Calories: \(Int(calories))")
-                    Slider(value: $calories, in: 0...1000)
+                    Slider(value: $calories, in: 0...2000, step: 10)
                 }
                 .padding()
                 
@@ -41,5 +41,4 @@ struct EditFoodView: View {
             }
         }
     }
-    
 }

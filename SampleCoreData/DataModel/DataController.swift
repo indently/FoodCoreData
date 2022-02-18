@@ -20,6 +20,17 @@ class DataController: ObservableObject {
         }
     }
     
+    func save(context: NSManagedObjectContext) {
+        do {
+            try context.save()
+            print("Data saved successfully.")
+        } catch {
+            // Handle errors in our database
+            let nsError = error as NSError
+            fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+        }
+    }
+    
     func addFood(name: String, calories: Double, context: NSManagedObjectContext) {
         let food = Food(context: context)
         food.id = UUID()
@@ -27,7 +38,7 @@ class DataController: ObservableObject {
         food.name = name
         food.calories = calories
         
-        try? context.save()
+        save(context: context)
     }
     
     func editFood(food: Food, name: String, calories: Double, context: NSManagedObjectContext) {
@@ -35,6 +46,6 @@ class DataController: ObservableObject {
         food.name = name
         food.calories = calories
         
-        try? context.save()
+        save(context: context)
     }
 }
