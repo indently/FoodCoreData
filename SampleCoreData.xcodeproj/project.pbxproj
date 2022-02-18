@@ -61,8 +61,8 @@
 		7A9401C727BF7D3700E0F47E /* SampleCoreData */ = {
 			isa = PBXGroup;
 			children = (
-				7A94020927BFB1A400E0F47E /* Helpers */,
 				7A9401C827BF7D3700E0F47E /* SampleCoreDataApp.swift */,
+				7A94020927BFB1A400E0F47E /* Helpers */,
 				7A9401E527BF8BED00E0F47E /* Views */,
 				7A9401E027BF800D00E0F47E /* DataModel */,
 				7A9401CC27BF7D3700E0F47E /* Assets.xcassets */,
