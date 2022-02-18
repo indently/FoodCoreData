@@ -13,9 +13,9 @@ func calcTimeSince(date: Date) -> String {
     let hours = minutes/60
     let days = hours/24
     
-    if minutes < 600 {
+    if minutes < 120 {
         return "\(minutes) minutes ago"
-    } else if minutes >= 600 && minutes < 1440 {
+    } else if minutes >= 120 && hours < 24 {
         return "\(hours) hours ago"
     } else {
         return "\(days) days ago"

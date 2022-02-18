@@ -12,7 +12,7 @@ struct AddFoodView: View {
     @Environment(\.dismiss) var dismiss
     
     @State private var name = ""
-    @State private var calories: Double = 400.0
+    @State private var calories: Double = 0
     
     var body: some View {
             Form {
