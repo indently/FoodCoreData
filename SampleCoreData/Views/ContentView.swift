@@ -19,15 +19,14 @@ struct ContentView: View {
             VStack {
                 List {
                     ForEach(food) { food in
-                        VStack(alignment: .leading) {
-                            Text(food.name!)
-                                .bold()
-                            Text("\(Int(food.calories))") + Text(" calories").foregroundColor(.red)
-                            Text("\(Int(-food.date!.timeIntervalSinceNow)/60) minutes ago")
-                        }
-                        .onTapGesture {
-                            // Edit item in here
-                        }
+                        NavigationLink(destination: EditFoodView(food: food)) {
+                            VStack(alignment: .leading) {
+                                Text(food.name!)
+                                    .bold()
+                                Text("\(Int(food.calories))") + Text(" calories").foregroundColor(.red)
+                                Text("\(Int(-food.date!.timeIntervalSinceNow)/60) minutes ago")
+                            }
+                        } 
                     }
                     .onDelete(perform: deleteFood)
                 }
@@ -49,14 +48,15 @@ struct ContentView: View {
         }
     }
     
+    
     private func deleteFood(offsets: IndexSet) {
         withAnimation {
-            offsets.map { food[$0] }.forEach(managedObjContext.delete)
+            offsets.map { food[$0] }
+            .forEach(managedObjContext.delete)
             
             try? managedObjContext.save()
         }
     }
-    
 }
 
 

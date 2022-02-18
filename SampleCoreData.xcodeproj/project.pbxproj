@@ -14,6 +14,7 @@
 		7A9401DD27BF7D5B00E0F47E /* FoodModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7A9401DB27BF7D5B00E0F47E /* FoodModel.xcdatamodeld */; };
 		7A9401DF27BF7DAE00E0F47E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9401DE27BF7DAE00E0F47E /* DataController.swift */; };
 		7A9401E427BF868D00E0F47E /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9401E327BF868D00E0F47E /* AddFoodView.swift */; };
+		7A94020827BF9ADD00E0F47E /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A94020727BF9ADD00E0F47E /* EditFoodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		7A9401DC27BF7D5B00E0F47E /* Food.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Food.xcdatamodel; sourceTree = "<group>"; };
 		7A9401DE27BF7DAE00E0F47E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7A9401E327BF868D00E0F47E /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
+		7A94020727BF9ADD00E0F47E /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				7A9401CA27BF7D3700E0F47E /* ContentView.swift */,
+				7A94020727BF9ADD00E0F47E /* EditFoodView.swift */,
 				7A9401E327BF868D00E0F47E /* AddFoodView.swift */,
 			);
 			path = Views;
@@ -164,6 +167,7 @@
 			files = (
 				7A9401E427BF868D00E0F47E /* AddFoodView.swift in Sources */,
 				7A9401DF27BF7DAE00E0F47E /* DataController.swift in Sources */,
+				7A94020827BF9ADD00E0F47E /* EditFoodView.swift in Sources */,
 				7A9401DD27BF7D5B00E0F47E /* FoodModel.xcdatamodeld in Sources */,
 				7A9401CB27BF7D3700E0F47E /* ContentView.swift in Sources */,
 				7A9401C927BF7D3700E0F47E /* SampleCoreDataApp.swift in Sources */,

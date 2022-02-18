@@ -30,4 +30,11 @@ class DataController: ObservableObject {
         try? context.save()
     }
     
+    func editFood(food: Food, name: String, calories: Double, context: NSManagedObjectContext) {
+        food.date = Date()
+        food.name = name
+        food.calories = calories
+        
+        try? context.save()
+    }
 }
