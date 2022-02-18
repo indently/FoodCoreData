@@ -15,6 +15,7 @@
 		7A9401DF27BF7DAE00E0F47E /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9401DE27BF7DAE00E0F47E /* DataController.swift */; };
 		7A9401E427BF868D00E0F47E /* AddFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9401E327BF868D00E0F47E /* AddFoodView.swift */; };
 		7A94020827BF9ADD00E0F47E /* EditFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A94020727BF9ADD00E0F47E /* EditFoodView.swift */; };
+		7AB73E1A27BFB1E3005C14F2 /* TimeFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB73E1927BFB1E3005C14F2 /* TimeFormatting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		7A9401DE27BF7DAE00E0F47E /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		7A9401E327BF868D00E0F47E /* AddFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodView.swift; sourceTree = "<group>"; };
 		7A94020727BF9ADD00E0F47E /* EditFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditFoodView.swift; sourceTree = "<group>"; };
+		7AB73E1927BFB1E3005C14F2 /* TimeFormatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeFormatting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 		7A9401C727BF7D3700E0F47E /* SampleCoreData */ = {
 			isa = PBXGroup;
 			children = (
+				7A94020927BFB1A400E0F47E /* Helpers */,
 				7A9401C827BF7D3700E0F47E /* SampleCoreDataApp.swift */,
 				7A9401E527BF8BED00E0F47E /* Views */,
 				7A9401E027BF800D00E0F47E /* DataModel */,
@@ -93,6 +96,14 @@
 				7A9401E327BF868D00E0F47E /* AddFoodView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		7A94020927BFB1A400E0F47E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				7AB73E1927BFB1E3005C14F2 /* TimeFormatting.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			files = (
 				7A9401E427BF868D00E0F47E /* AddFoodView.swift in Sources */,
 				7A9401DF27BF7DAE00E0F47E /* DataController.swift in Sources */,
+				7AB73E1A27BFB1E3005C14F2 /* TimeFormatting.swift in Sources */,
 				7A94020827BF9ADD00E0F47E /* EditFoodView.swift in Sources */,
 				7A9401DD27BF7D5B00E0F47E /* FoodModel.xcdatamodeld in Sources */,
 				7A9401CB27BF7D3700E0F47E /* ContentView.swift in Sources */,

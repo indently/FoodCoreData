@@ -31,7 +31,7 @@ struct ContentView: View {
                                     Text("\(Int(food.calories))") + Text(" calories").foregroundColor(.red)
                                 }
                                 Spacer()
-                                Text("\(Int(-food.date!.timeIntervalSinceNow)/60/60) hours ago")
+                                Text(calcTimeSince(date: food.date!))
                                     .foregroundColor(.gray)
                                     .italic()
                             }
@@ -50,9 +50,8 @@ struct ContentView: View {
                         Label("Add food", systemImage: "plus.circle")
                     }
                 }
-                ToolbarItem(placement: .navigationBarTrailing) {
+                ToolbarItem(placement: .navigationBarLeading) {
                     EditButton()
-                        .foregroundColor(.red)
                 }
             }
             .sheet(isPresented: $showingAddView) {
