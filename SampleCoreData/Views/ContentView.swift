@@ -58,6 +58,7 @@ struct ContentView: View {
                 AddFoodView()
             }
         }
+        .navigationViewStyle(.stack) // Removes sidebar on iPad
     }
     
     // Deletes food at the current offset
